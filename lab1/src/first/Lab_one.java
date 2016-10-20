@@ -6,9 +6,13 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
+
 public class Lab_one {
 	
 	
+	private static xiao;
+	private static wlibur;
+
 	//用于保存计算过程中的多项式
 	private static String exp="";   
 	//正则表达式：用于判断输入的多项式是否合法
