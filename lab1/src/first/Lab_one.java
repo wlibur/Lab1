@@ -9,17 +9,16 @@ import java.util.regex.Pattern;
 
 public class Lab_one {
 	
-	
-	private static xiao;
-	private static wlibur;
+private static xiao;
+private static wlibur;
 
 	//用于保存计算过程中的多项式
-	private static String exp="";   
+private static String exp="";   
 	//正则表达式：用于判断输入的多项式是否合法
-	private static String pattern="^(((-?([a-zA-Z]+)\\s*(\\^\\s*([0-9]+))?)|(((-?\\d+(\\.\\d+)?)\\s*)(([a-zA-Z]+)(\\^\\s*([0-9]+))?)?\\s*))[\\+\\-\\*]\\s*)*((-?([a-zA-Z]+)\\s*(\\^\\s*([0-9]+))?)|(((-?\\d+(\\.\\d+)?)\\s*)(([a-zA-Z]+)(\\^\\s*([0-9]+))?)?\\s*))$";
+private static String pattern="^(((-?([a-zA-Z]+)\\s*(\\^\\s*([0-9]+))?)|(((-?\\d+(\\.\\d+)?)\\s*)(([a-zA-Z]+)(\\^\\s*([0-9]+))?)?\\s*))[\\+\\-\\*]\\s*)*((-?([a-zA-Z]+)\\s*(\\^\\s*([0-9]+))?)|(((-?\\d+(\\.\\d+)?)\\s*)(([a-zA-Z]+)(\\^\\s*([0-9]+))?)?\\s*))$";
 
 	//正则表达式：用于按规则分割多项式（以加号为基准进行分割）
-	private static String pattern2="(\\+|-)(([A-Za-z]+|(-?(([1-9]\\d*\\.\\d*|0\\.\\d*[1-9]\\d*)[a-zA-Z]*|\\d+[a-zA-Z]*)))(\\*|\\^))*([A-Za-z]+|(-?(([1-9]\\d*\\.\\d*|0\\.\\d*[1-9]\\d*)|\\d+[a-zA-Z]*)))";
+private static String pattern2="(\\+|-)(([A-Za-z]+|(-?(([1-9]\\d*\\.\\d*|0\\.\\d*[1-9]\\d*)[a-zA-Z]*|\\d+[a-zA-Z]*)))(\\*|\\^))*([A-Za-z]+|(-?(([1-9]\\d*\\.\\d*|0\\.\\d*[1-9]\\d*)|\\d+[a-zA-Z]*)))";
     //Pattern类用于创建一个正则表达式//r的用处是什么??
 	private static Pattern r=null;
     //字符串数组，用于存储分割后的多项式    此list为全局变量
